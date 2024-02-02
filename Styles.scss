@@ -1,0 +1,271 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+}
+
+body {
+    position: relative;
+}
+
+.girl-body {
+    width: 200px;
+    top: 25%;
+    display: none;
+}
+
+.butterfly {
+    width: 200px;
+    top: 15%;
+    right: 0;
+    display: none;
+}
+
+.pillar {
+    width: 200px;
+    right: 0;
+    bottom: 15%;
+    display: none;
+}
+
+.title {
+    font-family: "Roboto Serif";
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.calender {
+    position: absolute;
+    background-color: #232526;
+    bottom: 0;
+    left: 5%;
+    padding: 8px 10px;
+    border-radius: 8px 8px 0 0;
+
+}
+
+.house-img,
+.book-img,
+.open-book-img {
+    max-width: 400px;
+    margin: auto;
+}
+
+.hover-nav {
+    border-bottom: 2px solid white;
+
+    &:hover {
+        border-image: linear-gradient(to right, #C0304F, #C0304F 70%, white 70%, white 80%, #C0304F 80%, #C0304F);
+        border-image-slice: 1;
+    }
+}
+
+.bread-crum {
+    span {
+        color: #747A82;
+    }
+}
+
+.subtitle {
+    color: #747A82;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+nav {
+    .nav-item:nth-child(5) {
+        z-index: 2;
+        background-color: white !important;
+    }
+
+    border-bottom: 1px solid #DDD;
+    height:auto;
+}
+
+.body-container {
+    max-width: 1100px;
+}
+
+img {
+    width: 100%;
+}
+
+.ministries {
+    h2 {
+        max-width: 600px;
+        border-left: 2px solid #C0304F;
+        padding-left: 10px;
+        text-align: center;
+    }
+
+    .ministries-card {
+        max-width: 350px;
+        background-color: #FFE6E0;
+        border-radius: 25px 25px 25px 0px;
+        transition: ease-in-out 400ms;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+
+        .card-img {
+            width: 80px;
+        }
+
+        a {
+            color: #232526;
+        }
+
+        .dot {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background-color: #232526;
+            color: white;
+            border-radius: 20px;
+        }
+
+    }
+}
+
+.events {
+    .page-number {
+        width: 45px;
+        height: 45px;
+        border-radius: 5px;
+        font-weight: 300;
+        font-size: 20px;
+
+        &:hover {
+            background-color: #C0304F;
+            color: white;
+        }
+    }
+
+    .title {
+        border-left: 2px solid #C0304F;
+    }
+
+    .subtitle {
+        max-width: 350px;
+    }
+
+    .clock-img,
+    .location-img {
+        width: 10pxl;
+    }
+
+    .event-card {
+        overflow: hidden;
+        max-width: 300px;
+        border: 1px solid #DDD;
+        border-radius: 10px;
+        background-color: #fff;
+
+        h6 {
+            font-size: 20px;
+        }
+
+        h4 {
+            font-size: 22px;
+        }
+    }
+
+    .btn {
+        font-size: 14px !important;
+        border-radius: 10px !important;
+    }
+}
+
+.footer {
+    background: url('./images/footer/footer-img.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    .footer-card {
+        max-width: 200px;
+
+        h4 {
+            color: #FCFCFC;
+            font-size: 18px;
+        }
+    }
+
+    .col-sm-12:nth-child(5) .footer-card {
+        max-width: 300px;
+
+        input {
+            background-color: #2F3032;
+            border-radius: 5px;
+            width: 100%;
+            padding-left: 10px;
+            height: 40px;
+            border: none;
+            font-size: 14px;
+        }
+
+        button {
+            font-size: 14px;
+            font-weight: 500;
+            border-radius: 8px;
+        }
+    }
+
+    .col-sm-12:nth-child(1) {
+        h5 {
+            max-width: 400px;
+            text-align: center;
+        }
+
+        border-bottom: 1px solid #333739;
+    }
+
+    .col-sm-12:nth-child(6) {
+        h5 {
+            text-align: center;
+        }
+
+        border-top: 1px solid #333739;
+    }
+
+    .logo {
+        width: 150px;
+    }
+
+    .social img {
+        width: 20px;
+    }
+
+}
+
+@media (min-width:768px) {
+
+    .house-img,
+    .book-img,
+    .open-book-img {
+        max-width: 100%;
+    }
+
+    .footer .col-sm-12:nth-child(1) h5,
+    .ministries h2 {
+        text-align: left;
+    }
+}
+
+@media(min-width:992px) {
+
+    .girl-body,
+    .butterfly,
+    .pillar {
+        display: block;
+    }
+
+    nav {
+        height: 90px;
+    }
+}
